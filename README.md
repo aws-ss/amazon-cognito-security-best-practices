@@ -10,9 +10,9 @@ Amazon Cognito 보안 가이드를 설명하기에 앞서, 이해하는 데 도�
 
 ## SAML vs OAuth vs OIDC
 
-#### SAML (Security Assertion Markup Language)
+### SAML (Security Assertion Markup Language)
 
-SAML은 인증 정보 제공자(IdP)와 서비스 제공자(SP) 간의 인증 및 인가 데이터를 교환하기 위한 XML 기반의 개방형 표준 데이터 포맷이다.
+SAML(Security Assertion Markup Language)은 인증 정보 제공자(IdP)와 서비스 제공자(SP) 간의 인증 및 인가 데이터를 교환하기 위한 XML 기반의 개방형 표준 데이터 포맷이다.
 
 일반적인 흐름은 다음과 같다.
 
@@ -26,7 +26,7 @@ SAML은 인증 정보 제공자(IdP)와 서비스 제공자(SP) 간의 인증 �
 ※ ACS(Assertion Consumer Service): 인증된 사용자 정보가 포함된 SAML Response 검증 및 서비스 제공을 위한 포워딩을 수행한다.
 
 
-#### OAuth (Open Authorization) 2.0
+### OAuth (Open Authorization) 2.0
 
 OAuth(Open Authorization)는 인터넷 사용자들이 비밀번호를 제공하지 않고 다른 웹사이트 상의 자신들의 정보에 대해 웹사이트나 애플리케이션의 접근 권한을 부여할 수 있는 접근 위임을 위한 개방형 표준이다.
 
@@ -42,14 +42,14 @@ OAuth 2.0 지원하는 권한 부여 유형은 다음과 같으며, 일부는 De
 
 자세한 내용은 [The OAuth 2.0 Authorization Framework](https://datatracker.ietf.org/doc/html/rfc6749) 에서 확인할 수 있다.
 
-##### Authorization Code
+#### Authorization Code
 
 Authorization Code Grant 유형은 기밀 및 공용 클라이언트가 인증 코드를 토큰으로 교환한다. 
 
 Server-Side 앱에 적합하며, 가장 일반적으로 사용하는 방식입니다.  
 
 
-##### Implicit ***(Deprecated)***
+#### Implicit ***(Deprecated)***
 
 Implicit Grant 유형은 인증 코드 교환 단계없이 액세스 토큰을 반환한다.
 
@@ -57,21 +57,21 @@ Implicit Grant 유형은 인증 코드 교환 단계없이 액세스 토큰을 �
 일반적으로 클라이언트에서 받는다고 확인하지 않고, HTTP 리다이렉션에서 액세스 토큰을 반환하는 내재된 위험으로 인해 권장되지 않는다.
 
 
-##### Resource Owner Password Credentials ***(Deprecated)***
+#### Resource Owner Password Credentials ***(Deprecated)***
 
 Resource Owner Password Credentials Grant 유형은 일반적인 대화형 양식을 통해 사용자 자격 증명(사용자 이름 및 암호)을 통해 액세스 토큰을 요청한다.
 
 Client와 Resource Owner 간 높은 신뢰 관계를 가질 수 있을 경우 주로 사용한다. (Client는 사용자 자격 증명를 별도 보관하지 않아야 한다)  
 
 
-##### Client Credentials
+#### Client Credentials
 
 사용자가 아니라 Client Credentials(Client ID, Client Secret) 정보를 인증해 액세스 토큰을 요청한다.
 
 백엔드에서 실행되는 CLI, 데몬 서비스와 같이 데이터에 액세스하기 위해 특정 사용자의 권한이 필요하지 않은 M2M(Machine-to-Machine) 애플리케이션 구성에서 주로 사용한다.
 
 
-##### Refresh Token
+#### Refresh Token
 
 사용 기간이 만료된 액세스 토큰을 사용해 리소스를 요청할 경우, "Invalid Token Error"가 발생한다.
 
