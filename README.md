@@ -7,6 +7,7 @@ Amazon Cognito는 웹 및 모바일 앱에 대한 인증, 권한 부여 및 사�
 
 Amazon Cognito 보안 가이드를 설명하기에 앞서, 이해하는 데 도움이 되는 내용들에 대해 먼저 설명한다.
 
+<br>
 
 1. [SAML vs OAuth vs OIDC](https://github.com/aws-ss/amazon-cognito-security-best-practices#saml-vs-oauth-vs-oidc)
    * [SAML (Security Assertion Markup Language)](https://github.com/aws-ss/amazon-cognito-security-best-practices#1-saml-security-assertion-markup-language)
@@ -17,6 +18,7 @@ Amazon Cognito 보안 가이드를 설명하기에 앞서, 이해하는 데 도�
    * [MFA(Multi-Factor Authentication)](https://github.com/aws-ss/amazon-cognito-security-best-practices#2-mfamulti-factor-authentication)
    * [사용자 풀(User pool) 고급 보안 기능](https://github.com/aws-ss/amazon-cognito-security-best-practices#3-%EC%82%AC%EC%9A%A9%EC%9E%90-%ED%92%80user-pool-%EA%B3%A0%EA%B8%89-%EB%B3%B4%EC%95%88-%EA%B8%B0%EB%8A%A5)
 
+<br>
 
 ## SAML vs OAuth vs OIDC
 
